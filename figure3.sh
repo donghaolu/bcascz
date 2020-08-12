@@ -14,7 +14,6 @@ rm(list=ls())
 gc()
 
 
-setwd("/nfs/home/donlu/SczBca/")
 options(stringsAsFactors = F)
 
 
@@ -99,10 +98,8 @@ n
 ## LocusZoom Standalone on vector
 
 # download package from web
-cd /nfs/home/donlu/SczBca/
 wget https://statgen.sph.umich.edu/locuszoom/download/locuszoom_1.4.tgz
 tar xvf locuszoom_1.4.tgz
-du -sh /scratch/tmp/donlu/locuszoom
 #89G
 
 
@@ -111,9 +108,6 @@ locuszoom/bin/lzupdate.py --build hg19 --gencode 19 --gwas-cat
 
 
 # plot locus chr19(p13.11)
-cd /nfs/home/donlu/SczBca/
-ln -s /nfs/home/donlu/locuszoom/bin/locuszoom locuszoom 
-
 # prep annote file
 {
   echo -e 'snp\tstring\tcolor'
