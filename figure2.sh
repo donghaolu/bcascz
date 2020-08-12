@@ -14,7 +14,6 @@ rm(list=ls())
 gc()
 
 
-setwd("/nfs/home/donlu/SczBca/")
 options(stringsAsFactors = F)
 
 
@@ -194,8 +193,15 @@ figtabB
 
 #panel figure
 pfig <- grid.arrange(figtabA, figtabB, nrow=1, ncol=2)
-ggsave('../output/pub_figure2.pdf',pfig, width=45, height=20, units="cm",scale=0.65) 
+ggsave('pub_figure2.pdf',pfig, width=45, height=20, units="cm",scale=0.65) 
+
+
+q()
+n
 
 
 
+##
+## END OF FILE
+##
 
