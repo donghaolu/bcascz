@@ -39,9 +39,6 @@ library(data.table)
 library(foreign)
 library(ggplot2)
 require(gridExtra)
-library(RColorBrewer)
-colourCount = length(unique(R2.scz_prs_bca$r2))
-getPalette = colorRampPalette(brewer.pal(9, "YlOrRd"))
 
 ### Import data in R
 scz_prs_bca <- read.table("SCZ_nomhc_BCarisk_500kb_RAW_RESULTS_DATA.txt",header=T,stringsAsFactors=F)
